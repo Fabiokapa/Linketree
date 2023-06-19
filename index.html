@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <title>Linketree</title>
+</head>
+<body>
+    
+    <main>
+         <article>
+             <section>
+
+                <div class="container_luz">
+                    <input type="checkbox" class="checkbox" id="chk">
+                    <label for="chk">
+                        <i class="fas fa-sun"></i>
+                        <i class=" fas fa-moon"></i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
+
+                <div class="container">
+
+                    <div class="perfil">
+                        <figure>
+                           <img src="fabio.jpg" alt="">
+                        </figure>
+                   </div>
+
+                   <div class="nome">
+                        <h2>Fabio Manuel Kapa</h2>
+                        <h3>Front end developer</h3>
+                   </div>
+
+                   <div class="quadro">
+                       <ul>
+                          <li>
+                              <a href="#">Biblioteca Online</a>
+                          </li>
+                          <li>
+                              <a href="#">Dat Tecnology</a>
+                          </li>
+                          <li>
+                              <a href="#">Veja meu Portifolio</a>
+                          </li>
+                       </ul>
+                   </div>
+
+                   <div class="redes">
+                       <i class=" fab fa-github" id="ativo"></i>
+                       <i class=" fab fa-instagram"></i>
+                       <i class=" fab fa-linkedin"></i>
+                       <i class=" fas fa-envelope"></i>
+                   </div>   
+
+                   <div class="rodape">
+                      <p>Todos os diretos reservados</p>
+                   </div>
+
+                </div>
+
+             </section>
+         </article>
+    </main>
+
+    <footer>
+         <div class="itemCard">
+
+             <div class="item0" style="--i:0"></div>
+             <div class="item1" style="--i:1"></div>
+             <div class="item2" style="--i:2"></div>
+             <div class="item3" style="--i:3"></div>
+             <div class="item4" style="--i:4"></div>
+
+         </div>
+    </footer>
+    
+    <script>
+
+        const chk = document.getElementById('chk');
+        chk.addEventListener('change',() =>{
+            document.body.classList.toggle('dark');
+        });
+
+    </script>
+
+</body>
+</html>
